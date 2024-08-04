@@ -8,11 +8,3 @@ eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
-
-management:
-  zipkin:
-    tracing:
-      endpoint: http://localhost:9411 # Replace with your Zipkin server URL
-  tracing:
-    sampling:
-      probability: 1.0 # Set to 1.0 for sampling all requests
