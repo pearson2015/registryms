@@ -59,6 +59,11 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-bootstrap</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>com.github.loki4j</groupId>
+			<artifactId>loki-logback-appender</artifactId>
+			<version>1.6.0-m1</version>
+		</dependency>
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
