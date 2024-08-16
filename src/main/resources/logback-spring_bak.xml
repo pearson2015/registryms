@@ -6,7 +6,7 @@
 <!--        </http>-->
 <!--        <format>-->
 <!--            <label>-->
-<!--                <pattern>app=registryms1,host=${HOSTNAME},level=%level</pattern>-->
+<!--                <pattern>app=registryms,host=${HOSTNAME},level=%level</pattern>-->
 <!--                <readMarkers>true</readMarkers>-->
 <!--            </label>-->
 <!--            <message>-->
