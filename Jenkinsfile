@@ -40,8 +40,7 @@ pipeline {
         stage('Deploy App on k8s') {
             steps {
                 withCredentials([string(credentialsId: 'my_kubernetes', variable: 'api_token')]) {
-                    sh 'helm --kube-token $api_token --kube-apiserver https://192.168.76.2:8443 --kube-insecure-skip-tls-verify=true uninstall registryms-release'
-                    sh 'helm --kube-token $api_token --kube-apiserver https://192.168.76.2:8443 --kube-insecure-skip-tls-verify=true upgrade registryms-release --install k8chart --set image.tag=latest'
+                    sh 'helm --kube-token $api_token --kube-apiserver https://192.168.76.2:8443 --kube-insecure-skip-tls-verify=true upgrade registryms-release --install k8chart --set image.tag=latest --force'
                 }
             }
         }
