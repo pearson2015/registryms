@@ -8,3 +8,17 @@ eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ["prometheus","health","refresh"]
+  tracing:
+    sampling:
+      probability: 1
+
+#logging:
+#  pattern:
+#    correlation: "[${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
+#  include-application-name: false
